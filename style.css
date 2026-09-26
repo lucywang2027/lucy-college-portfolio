@@ -259,9 +259,9 @@ a {
   display: grid;
 
   grid-template-columns:
-    260px 1fr 280px;
+    240px 1fr 280px;
 
-  gap: 36px;
+  gap: 28px;
 
   align-items: center;
 }
@@ -273,7 +273,7 @@ a {
   object-fit: contain;
   object-position: center top;
   border-radius: 7px;
-  background: #ffffff;
+  background: transparent;
 }
 
 
