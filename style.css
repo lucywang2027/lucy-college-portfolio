@@ -1,0 +1,1023 @@
+/* =====================================
+   BASIC RESET
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color: #17345c;
+  background: #ffffff;
+
+  line-height: 1.6;
+}
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* =====================================
+   GENERAL LAYOUT
+===================================== */
+
+.section-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.site-header {
+  background: rgba(255, 255, 255, 0.97);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  border-bottom: 1px solid #e8edf4;
+}
+
+
+.nav-container {
+  width: min(1180px, 92%);
+
+  margin: auto;
+
+  height: 68px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.55rem;
+
+  color: #123f72;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+
+.main-nav {
+  display: flex;
+
+  gap: 32px;
+}
+
+
+.main-nav a {
+  font-size: 0.92rem;
+
+  color: #17345c;
+
+  position: relative;
+
+  padding: 24px 0 20px;
+}
+
+
+.main-nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 15px;
+
+  height: 2px;
+  width: 0;
+
+  background: #3a79c9;
+
+  transition: 0.3s;
+}
+
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+  min-height: 430px;
+
+  background-image:
+    url("images/hero-volleyball.jpg");
+
+  background-size: cover;
+
+  background-position:
+    center 38%;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 48, 91, 0.93) 0%,
+      rgba(8, 59, 108, 0.77) 38%,
+      rgba(5, 51, 96, 0.22) 68%,
+      rgba(5, 51, 96, 0.05) 100%
+    );
+}
+
+
+.hero-content {
+  width: min(1180px, 92%);
+
+  margin: auto;
+
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+}
+
+
+.hero h1 {
+  font-size: clamp(3.2rem, 6vw, 5.6rem);
+
+  font-weight: 400;
+
+  letter-spacing: -2px;
+
+  line-height: 1;
+}
+
+
+.hero-subtitle {
+  margin-top: 18px;
+
+  font-size: 1.08rem;
+
+  letter-spacing: 4px;
+}
+
+
+.hero-description {
+  width: min(520px, 90%);
+
+  margin-top: 18px;
+
+  font-size: 1.05rem;
+
+  color: rgba(255, 255, 255, 0.93);
+}
+
+
+.hero-button {
+  display: inline-block;
+
+  margin-top: 26px;
+
+  padding: 10px 25px;
+
+  border: 1px solid white;
+
+  border-radius: 30px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+
+.hero-button:hover {
+  background: white;
+
+  color: #123f72;
+}
+
+
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about-section {
+  padding: 45px 0;
+}
+
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns:
+    230px 1fr 260px;
+
+  gap: 36px;
+
+  align-items: center;
+}
+
+
+.about-photo img {
+  height: 270px;
+
+  object-fit: cover;
+
+  border-radius: 7px;
+}
+
+
+.section-label {
+  font-size: 0.77rem;
+
+  color: #4e89cc;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+
+.about-content h2 {
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  margin-bottom: 14px;
+
+  color: #123f72;
+}
+
+
+.about-content p {
+  color: #58677a;
+
+  max-width: 650px;
+}
+
+
+.about-quote {
+  text-align: center;
+
+  color: #2b69a9;
+
+  padding: 30px;
+}
+
+
+.about-quote p {
+  font-family:
+    Georgia,
+    serif;
+
+  font-style: italic;
+
+  font-size: 1.45rem;
+}
+
+
+.about-quote span {
+  display: block;
+
+  margin-top: 12px;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+
+/* =====================================
+   PORTFOLIO AREA
+===================================== */
+
+.portfolio-section {
+  background: #f8fbff;
+
+  padding: 35px 0 55px;
+}
+
+
+.portfolio-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+.portfolio-card {
+  background: white;
+
+  border:
+    1px solid #dbe6f2;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  box-shadow:
+    0 5px 18px
+    rgba(18, 63, 114, 0.04);
+}
+
+
+.card-heading > div {
+  display: flex;
+
+  gap: 13px;
+
+  align-items: flex-start;
+
+  margin-bottom: 18px;
+}
+
+
+.card-icon {
+  font-size: 2rem;
+}
+
+
+.card-heading h2 {
+  font-size: 1.55rem;
+
+  font-weight: 500;
+
+  color: #123f72;
+}
+
+
+.card-heading p {
+  color: #718096;
+
+  font-size: 0.9rem;
+}
+
+
+
+/* =====================================
+   VOLLEYBALL
+===================================== */
+
+.volleyball-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.3fr 1fr;
+
+  gap: 12px;
+}
+
+
+.video-card {
+  min-height: 250px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  position: absolute;
+
+  inset: 0;
+}
+
+
+.video-dark-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 45%,
+      rgba(0, 0, 0, 0.65)
+    );
+}
+
+
+.play-button {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  color: #123f72;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 5px;
+
+  font-size: 1.45rem;
+
+  transition: 0.25s;
+}
+
+
+.video-card:hover
+.play-button {
+  transform:
+    translate(-50%, -50%)
+    scale(1.1);
+}
+
+
+.video-caption {
+  position: absolute;
+
+  left: 16px;
+  bottom: 14px;
+
+  color: white;
+}
+
+
+.video-caption strong {
+  display: block;
+}
+
+
+.video-caption span {
+  font-size: 0.78rem;
+
+  color:
+    rgba(255, 255, 255, 0.8);
+}
+
+
+.volleyball-secondary img {
+  height: 165px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+.sport-tags {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 8px;
+
+  margin-top: 9px;
+}
+
+
+.sport-tag {
+  background: #edf5ff;
+
+  padding: 10px;
+
+  border-radius: 7px;
+}
+
+
+.sport-tag strong {
+  display: block;
+
+  font-size: 0.84rem;
+
+  color: #1c5796;
+}
+
+
+.sport-tag span {
+  font-size: 0.7rem;
+
+  color: #718096;
+}
+
+
+
+/* =====================================
+   ART
+===================================== */
+
+.art-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 9px;
+}
+
+
+.art-grid img {
+  height: 235px;
+
+  object-fit: cover;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+
+.art-grid img:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0,0,0,0.1);
+}
+
+
+.text-link {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  font-size: 0.9rem;
+
+  color: #3779c3;
+}
+
+
+
+/* =====================================
+   MUSIC
+===================================== */
+
+.music-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 0.9fr;
+
+  gap: 12px;
+}
+
+
+.music-grid > img {
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+.certificate-card {
+  position: relative;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+
+.certificate-card img {
+  height: 220px;
+
+  object-fit: cover;
+}
+
+
+.certificate-caption {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background:
+    rgba(255,255,255,0.92);
+
+  text-align: center;
+
+  padding: 10px;
+}
+
+
+.certificate-caption strong {
+  display: block;
+
+  color: #123f72;
+}
+
+
+.certificate-caption span {
+  font-size: 0.75rem;
+
+  color: #6e7d8f;
+}
+
+
+
+/* =====================================
+   LEADERSHIP
+===================================== */
+
+.leadership-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+
+.mini-card {
+  overflow: hidden;
+
+  border:
+    1px solid #e2eaf2;
+
+  border-radius: 8px;
+
+  background: #fafcff;
+}
+
+
+.mini-card img {
+  height: 140px;
+
+  object-fit: cover;
+}
+
+
+.mini-card-content {
+  padding: 13px;
+}
+
+
+.mini-card h3 {
+  color: #174f89;
+
+  font-size: 0.92rem;
+
+  margin-bottom: 5px;
+}
+
+
+.mini-card p {
+  font-size: 0.8rem;
+
+  color: #718096;
+}
+
+
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-section {
+  padding: 55px 0 65px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #eaf4ff
+    );
+}
+
+
+.contact-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.contact-heading h2 {
+  font-size: 1.8rem;
+
+  font-weight: 500;
+
+  color: #123f72;
+}
+
+
+.contact-heading p {
+  margin-top: 6px;
+
+  color: #718096;
+}
+
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+
+.contact-card {
+  background: white;
+
+  padding: 22px 12px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  box-shadow:
+    0 6px 18px
+    rgba(18, 63, 114, 0.07);
+
+  transition: 0.3s;
+}
+
+
+.contact-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 9px 25px
+    rgba(18, 63, 114, 0.14);
+}
+
+
+.contact-icon {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #367aca;
+
+  font-size: 1.6rem;
+
+  font-weight: bold;
+}
+
+
+.contact-card strong {
+  display: block;
+
+  color: #123f72;
+}
+
+
+.contact-card small {
+  color: #6991bb;
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+  padding: 20px;
+
+  background: #123f72;
+
+  color:
+    rgba(255,255,255,0.8);
+
+  text-align: center;
+
+  font-size: 0.78rem;
+}
+
+
+
+/* =====================================
+   TABLET / MOBILE
+===================================== */
+
+@media (max-width: 900px) {
+
+  .main-nav {
+    gap: 15px;
+  }
+
+
+  .about-grid {
+    grid-template-columns:
+      180px 1fr;
+  }
+
+
+  .about-quote {
+    grid-column:
+      1 / -1;
+  }
+
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contact-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+
+@media (max-width: 680px) {
+
+  .nav-container {
+    height: auto;
+
+    padding: 15px 0;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+
+  .main-nav {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px 18px;
+  }
+
+
+  .main-nav a {
+    padding: 4px 0;
+
+    font-size: 0.82rem;
+  }
+
+
+  .main-nav a::after {
+    bottom: 0;
+  }
+
+
+  .hero {
+    min-height: 470px;
+
+    background-position:
+      60% center;
+  }
+
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+
+  .hero-subtitle {
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+  }
+
+
+  .hero-description {
+    font-size: 0.9rem;
+
+    width: 75%;
+  }
+
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-photo {
+    max-width: 270px;
+
+    margin: auto;
+  }
+
+
+  .about-content {
+    text-align: center;
+  }
+
+
+  .about-quote {
+    padding: 10px;
+  }
+
+
+  .volleyball-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .video-card {
+    min-height: 280px;
+  }
+
+
+  .art-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .art-grid img {
+    height: 210px;
+  }
+
+
+  .music-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contact-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+}
