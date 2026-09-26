@@ -146,8 +146,7 @@ a {
   background-size: cover;
 
   background-position:
-    65% 38%;
-
+80% center;
   position: relative;
 
   display: flex;
@@ -274,6 +273,7 @@ a {
   object-position: center top;
   border-radius: 7px;
   background: transparent;
+   transform: translateX(-20px);
 }
 
 
