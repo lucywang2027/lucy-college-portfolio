@@ -1027,3 +1027,18 @@ footer {
   }
 
 }
+.contact-grid {
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+#about,
+#volleyball,
+#art,
+#music,
+#leadership,
+#contact {
+    scroll-margin-top: 90px;
+}
