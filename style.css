@@ -1280,3 +1280,7 @@ body {
   inset: auto !important;
   flex-shrink: 0;
 }
+/* Keep Media & Recognition visible when jumping to Music */
+#music {
+  scroll-margin-top: 430px;
+}
