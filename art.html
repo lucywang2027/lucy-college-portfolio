@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Art Portfolio | Lucy Wang</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #1f2f57;
+      line-height: 1.6;
+    }
+
+    /* Top bar */
+    .top-bar {
+      width: 100%;
+      background: white;
+      border-bottom: 1px solid #e2e6ee;
+      padding: 18px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-bar a {
+      text-decoration: none;
+      color: #284d8f;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .top-bar a:hover {
+      opacity: 0.7;
+    }
+
+    /* Header */
+    .art-header {
+      text-align: center;
+      padding: 70px 20px 45px;
+    }
+
+    .art-header h1 {
+      font-size: 44px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #25477f;
+    }
+
+    .art-header p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #667085;
+    }
+
+    /* Gallery */
+    .gallery {
+      width: 86%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      padding-bottom: 80px;
+    }
+
+    .art-card {
+      background: white;
+      border: 1px solid #e3e7ef;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(36, 71, 127, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .art-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(36, 71, 127, 0.12);
+    }
+
+    .art-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .art-info {
+      padding: 20px;
+    }
+
+    .art-info h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+      color: #25477f;
+    }
+
+    .art-info p {
+      font-size: 15px;
+      color: #7a8496;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 28px 20px 40px;
+      color: #8a94a6;
+      font-size: 14px;
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .art-header h1 {
+        font-size: 38px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .top-bar {
+        padding: 16px 6%;
+      }
+
+      .art-header {
+        padding: 50px 20px 35px;
+      }
+
+      .art-header h1 {
+        font-size: 32px;
+      }
+
+      .art-header p {
+        font-size: 16px;
+      }
+
+      .gallery {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .art-card img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Back to main portfolio -->
+  <div class="top-bar">
+    <a href="index.html">← Back to Portfolio</a>
+  </div>
+
+  <!-- Page title -->
+  <section class="art-header">
+    <h1>Art Portfolio</h1>
+    <p>
+      A collection of works exploring different media, ideas,
+      and perspectives.
+    </p>
+  </section>
+
+  <!-- Art Gallery -->
+  <section class="gallery">
+
+    <!-- Artwork 1 -->
+    <div class="art-card">
+      <img src="images/art1.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Charcoal on paper · 2025</p>
+      </div>
+    </div>
+
+    <!-- Artwork 2 -->
+    <div class="art-card">
+      <img src="images/art2.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Acrylic on canvas · 2025</p>
+      </div>
+    </div>
+
+    <!-- Artwork 3 -->
+    <div class="art-card">
+      <img src="images/art3.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Mixed media · 2024</p>
+      </div>
+    </div>
+
+    <!-- Artwork 4 -->
+    <div class="art-card">
+      <img src="images/art4.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Colored pencil · 2024</p>
+      </div>
+    </div>
+
+    <!-- Artwork 5 -->
+    <div class="art-card">
+      <img src="images/art5.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Watercolor · 2024</p>
+      </div>
+    </div>
+
+    <!-- Artwork 6 -->
+    <div class="art-card">
+      <img src="images/art6.jpg" alt="Artwork by Lucy Wang">
+      <div class="art-info">
+        <h3>Artwork Title</h3>
+        <p>Graphite on paper · 2023</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Lucy Wang
+  </footer>
+
+</body>
+</html>
