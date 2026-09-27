@@ -1196,9 +1196,13 @@ body {
    ============================== */
 
 .contact-section {
-  padding: 38px 20px 42px;
-  background: #f6f9fc;
-  text-align: center;
+  background-image: url("images/misty_blue_mountain_panorama.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 45px 20px 50px;
+  position: relative;
 }
 
 .contact-container {
