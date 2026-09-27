@@ -516,6 +516,19 @@ a {
               transform 0.15s ease,
               box-shadow 0.2s ease;
 }
+.play-button span {
+  display: block;
+  transform: translateX(2px);
+}
+.video-card:hover .play-button {
+  background: #2f5ea7;
+  color: white;
+  box-shadow: 0 8px 20px rgba(47, 94, 167, 0.28);
+}
+.video-card:active .play-button {
+  transform: scale(0.92);
+}
+border: 2px solid rgba(255, 255, 255, 0.9);
 
 
 .video-card:hover
