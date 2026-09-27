@@ -1284,3 +1284,16 @@ body {
 #music {
   scroll-margin-top: 430px;
 }
+/* ========================================
+   NAVIGATION SCROLL ADJUSTMENT
+======================================== */
+
+#music {
+  scroll-margin-top: 430px;
+}
+
+@media (max-width: 800px) {
+  #music {
+    scroll-margin-top: 180px;
+  }
+}
