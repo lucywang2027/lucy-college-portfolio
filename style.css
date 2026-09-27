@@ -1297,3 +1297,129 @@ body {
     scroll-margin-top: 180px;
   }
 }
+/* ==============================
+   CONTACT / LET'S CONNECT
+   ============================== */
+
+.contact-section {
+  padding: 38px 20px 42px;
+  background: #f6f9fc;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #173b70;
+}
+
+.contact-subtitle {
+  margin: 0 0 24px;
+  font-size: 15px;
+  color: #657184;
+}
+
+/* 4 cards in one row */
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/* Smaller contact cards */
+.contact-card {
+  min-height: 105px;
+  padding: 16px 10px 14px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #173b70;
+
+  box-shadow: 0 3px 12px rgba(25, 60, 100, 0.08);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(25, 60, 100, 0.14);
+}
+
+.contact-card h3 {
+  margin: 7px 0 3px;
+  font-size: 16px;
+  color: #173b70;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+
+/* Real brand logos */
+.contact-logo-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Email icon */
+.email-logo {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  color: #2967b2;
+}
+
+
+/* Tablet */
+@media (max-width: 800px) {
+
+  .contact-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* Phone */
+@media (max-width: 480px) {
+
+  .contact-section {
+    padding: 30px 16px 34px;
+  }
+
+  .contact-section h2 {
+    font-size: 26px;
+  }
+
+  .contact-links {
+    gap: 10px;
+  }
+
+  .contact-card {
+    min-height: 100px;
+  }
+
+}
