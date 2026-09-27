@@ -1450,3 +1450,15 @@ body {
     padding: 16px 10px;
   }
 }
+/* Fix anchor position on mobile */
+@media (max-width: 768px) {
+  #home,
+  #about,
+  #volleyball,
+  #art,
+  #music,
+  #leadership,
+  #contact {
+    scroll-margin-top: 90px;
+  }
+}
