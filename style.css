@@ -407,6 +407,12 @@ a {
   display: block;
 }
 
+.card-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 
 .card-heading h2 {
   font-size: 1.55rem;
