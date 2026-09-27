@@ -1107,3 +1107,16 @@ body {
     white-space: nowrap;
   }
 }
+/* Fix volleyball icon size */
+.card-heading .card-icon-img {
+  width: 50px !important;
+  height: 50px !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+  min-width: 50px;
+  object-fit: contain;
+  display: block;
+  position: static !important;
+  inset: auto !important;
+  flex-shrink: 0;
+}
