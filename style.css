@@ -1417,7 +1417,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 1;
   color: #2f67b2;
   margin-bottom: 6px;
 }
