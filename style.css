@@ -1466,3 +1466,14 @@ body {
   margin-right: 0;
   text-align: right;
 }
+
+
+/* Art Gallery - View More Art hover effect */
+#art .text-link {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+#art .text-link:hover {
+  transform: translateX(4px) scale(1.06);
+  color: #245a9e;
+}
