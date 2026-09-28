@@ -1455,3 +1455,14 @@ body {
     scroll-margin-top: 90px;
   }
 }
+
+
+/* Art Gallery - View More Art link aligned right */
+#art .text-link {
+  display: block;
+  width: fit-content;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
