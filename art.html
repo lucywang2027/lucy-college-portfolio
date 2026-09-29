@@ -155,6 +155,48 @@
         height: auto;
       }
     }
+
+    /* Full-screen artwork lightbox */
+.art-card img {
+    cursor: zoom-in;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.88);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 92vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 42px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10000;
+}
   </style>
 </head>
 
@@ -372,5 +414,44 @@
     © 2026 Lucy Wang
   </footer>
 
+  <!-- Artwork Lightbox -->
+<div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged artwork">
+</div>
+
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    document.querySelectorAll(".art-card img").forEach(img => {
+        img.addEventListener("click", function () {
+            lightboxImg.src = this.src;
+            lightboxImg.alt = this.alt;
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+
+    closeBtn.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            closeLightbox();
+        }
+    });
+</script>
 </body>
 </html>
