@@ -722,6 +722,22 @@
       window.scrollTo(0, 0);
     }, 50);
   });
+
+  // Mobile only: open the full YouTube playlist
+if (window.innerWidth <= 768) {
+  const volleyballVideo = document.querySelector('.video-card');
+
+  if (volleyballVideo) {
+    volleyballVideo.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      window.open(
+        'https://www.youtube.com/playlist?list=PLHcpbSh4NYRc',
+        '_blank'
+      );
+    });
+  }
+}
 </script>
 
 </body>
