@@ -841,9 +841,7 @@ border: 2px solid rgba(255, 255, 255, 0.9);
   padding: 10px;
 }
 
-.certificate-caption {
-    transform: translateY(55px);
-}
+
 .certificate-caption strong {
   display: block;
 
