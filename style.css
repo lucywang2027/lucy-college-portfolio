@@ -1474,3 +1474,7 @@ body {
   transform: translateX(4px) scale(1.06);
   color: #245a9e;
 }
+.art-card a {
+  text-decoration: none;
+  color: inherit;
+}
