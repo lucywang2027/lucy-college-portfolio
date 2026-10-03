@@ -1483,3 +1483,33 @@ body {
   object-position: center 48%;
   transform: scale(1.18);
 }
+/* Community Service heading */
+#service .card-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#service .card-heading > div:last-child {
+    display: block;
+}
+
+#service .card-heading h2 {
+    margin: 0 0 6px 0;
+}
+
+#service .card-heading p {
+    margin: 0;
+}
+#service .service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+#service .service-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
