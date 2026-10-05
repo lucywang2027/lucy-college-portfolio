@@ -1549,3 +1549,15 @@ footer {
   grid-column: 1 / -1;
   clear: both;
 }
+/* Show mountain background through Music */
+.music-contact-row #music {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Let the mountain background cover the whole row */
+.music-contact-row {
+  background-image: url("images/misty_blue_mountain_panorama.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
