@@ -1561,3 +1561,10 @@ footer {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+/* Leadership + Community Service 稍微缩窄并居中 */
+#leadership,
+#service {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
