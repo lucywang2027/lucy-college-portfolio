@@ -1520,22 +1520,44 @@ footer {
   grid-column: 1 / -1;
   clear: both;
 }
-/* Show mountain background through Music */
-.music-contact-row #music {
-  background: rgba(255, 255, 255, 0.25) !important;
-}
 
-/* Let the mountain background cover the whole row */
-.music-contact-row {
-  background-image: url("images/misty_blue_mountain_panorama.png") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
 /* Leadership + Community Service 稍微缩窄并居中 */
 #leadership,
 #service {
   width: 94%;
   margin-left: auto;
   margin-right: auto;
+}
+/* Music + Contact unified mountain background */
+.music-contact-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+
+  background-image: url("images/misty_blue_mountain_panorama.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.music-contact-row #music {
+  background: rgba(255,255,255,0.45) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0;
+}
+
+.music-contact-row #contact {
+  background: rgba(255,255,255,0.18) !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  margin: 0;
+}
+
+.music-contact-row .contact-overlay {
+  background: transparent !important;
 }
