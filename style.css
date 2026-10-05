@@ -1561,3 +1561,23 @@ footer {
 .music-contact-row .contact-overlay {
   background: transparent !important;
 }
+footer {
+  width: 100vw !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+#leadership .mini-card:nth-child(2) img {
+  object-fit: contain !important;
+  background: #f8fbff;
+}
+.music-contact-row {
+  background: url("images/misty_blue_mountain_panorama.png") center / cover no-repeat !important;
+}
+
+.music-contact-row #music,
+.music-contact-row #contact {
+  background-color: rgba(255,255,255,0.35) !important;
+  background-image: none !important;
+  border: none !important;
+}
