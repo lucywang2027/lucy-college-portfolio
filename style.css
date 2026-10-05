@@ -1513,35 +1513,6 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
-/* Music + Let's Connect 整体一条 */
-.music-contact-row {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-
-  background-image: url("images/misty_blue_mountain_panorama.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-/* 左边 Music */
-.music-contact-row #music {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  background: rgba(255,255,255,0.65);
-}
-
-/* 右边 Let's Connect */
-.music-contact-row #contact {
-  margin: 0;
-  border-radius: 0;
-  background: rgba(255,255,255,0.20);
-  background-image: none;
-}
 
 /* 最下面蓝色版权条必须占整行 */
 footer {
