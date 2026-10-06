@@ -1661,3 +1661,17 @@ footer {
   }
 
 }
+/* Remove blank space below footer */
+.portfolio-section {
+  padding-bottom: 0 !important;
+}
+
+footer {
+  margin-bottom: 0 !important;
+}
+
+body,
+html {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
