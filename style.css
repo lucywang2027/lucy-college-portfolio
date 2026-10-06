@@ -1581,3 +1581,83 @@ footer {
   background-image: none !important;
   border: none !important;
 }
+/* =====================================
+   MUSIC + CONTACT — ONE BACKGROUND
+===================================== */
+
+.music-contact-row {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+
+  width: 100%;
+
+  background-image: url("images/misty_blue_mountain_panorama.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+
+/* LEFT — MUSIC */
+.music-contact-row #music {
+  margin: 0;
+
+  background: rgba(255, 255, 255, 0.38) !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  padding: 28px;
+}
+
+
+/* RIGHT — LET'S CONNECT */
+.music-contact-row #contact {
+  margin: 0;
+
+  background: rgba(255, 255, 255, 0.18) !important;
+  background-image: none !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  padding: 28px;
+}
+
+
+/* Remove old overlay background */
+.music-contact-row .contact-overlay {
+  background: transparent !important;
+  padding: 0;
+}
+
+
+/* Keep contact content centered */
+.music-contact-row .contact-container {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+  .music-contact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .music-contact-row #music,
+  .music-contact-row #contact {
+    padding: 22px;
+  }
+
+}
