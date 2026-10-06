@@ -1713,3 +1713,12 @@ footer {
   margin: 0;
   width: 100%;
 }
+/* Remove white overlay from Music + Contact */
+.music-contact-row #music,
+.music-contact-row #contact {
+  background: transparent !important;
+}
+
+.music-contact-row .contact-overlay {
+  background: transparent !important;
+}
