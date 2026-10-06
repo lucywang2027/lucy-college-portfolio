@@ -1702,3 +1702,6 @@ html {
 footer {
   margin-top: 0 !important;
 }
+#highlights {
+  scroll-margin-top: 90px;
+}
