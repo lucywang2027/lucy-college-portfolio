@@ -1675,3 +1675,22 @@ html {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+/* MUSIC + CONTACT — full screen mountain background */
+
+.music-contact-row {
+  width: 100vw !important;
+  max-width: none !important;
+
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+
+  padding-left: max(4vw, calc((100vw - 1180px) / 2)) !important;
+  padding-right: max(4vw, calc((100vw - 1180px) / 2)) !important;
+
+  background-image: url("images/misty_blue_mountain_panorama.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  border-radius: 0 !important;
+}
