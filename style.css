@@ -1694,3 +1694,11 @@ html {
 
   border-radius: 0 !important;
 }
+/* Mountain section touches footer */
+.music-contact-row {
+  margin-bottom: 0 !important;
+}
+
+footer {
+  margin-top: 0 !important;
+}
