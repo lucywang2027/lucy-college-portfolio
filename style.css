@@ -349,7 +349,7 @@ a {
 .portfolio-section {
   background: #f8fbff;
 
-  padding: 35px 0 55px;
+  padding: 35px 0 0;
 }
 
 
@@ -1561,12 +1561,7 @@ footer {
 .music-contact-row .contact-overlay {
   background: transparent !important;
 }
-footer {
-  width: 100vw !important;
-  max-width: none !important;
-  margin-left: calc(50% - 50vw) !important;
-  margin-right: calc(50% - 50vw) !important;
-}
+
 #leadership .mini-card:nth-child(2) img {
   object-fit: contain !important;
   background: #f8fbff;
@@ -1704,4 +1699,17 @@ footer {
 }
 #highlights {
   scroll-margin-top: 90px;
+}
+/* Final footer spacing fix */
+.music-contact-row {
+  margin-bottom: 0 !important;
+}
+
+.portfolio-section {
+  padding-bottom: 0 !important;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
 }
