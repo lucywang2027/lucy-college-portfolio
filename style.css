@@ -1729,3 +1729,43 @@ footer {
 #music {
   scroll-margin-top: 90px !important;
 }
+/* =====================================
+   MOBILE FIX — Leadership + Service
+===================================== */
+
+@media (max-width: 800px) {
+
+  /* Leadership & Academics */
+  #leadership .leadership-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #leadership .mini-card {
+    width: 100% !important;
+  }
+
+  #leadership .mini-card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: cover;
+  }
+
+
+  /* Community Service */
+  #service .service-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #service .service-item {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  #service .service-item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+}
