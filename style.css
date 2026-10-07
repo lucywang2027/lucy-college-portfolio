@@ -2010,7 +2010,8 @@ footer {
    move crop upward so Lucy's whole face is visible */
 
 .achievement-card:first-child img {
-  object-position: center 20%;
+   heght:210px;
+  object-position: center top;
 }
 
 
