@@ -2220,3 +2220,87 @@ footer {
 #volleyball-achievements {
   scroll-margin-top: 90px;
 }
+/* =========================================
+   FIX VOLLEYBALL ACHIEVEMENT SVG ICONS
+   ========================================= */
+
+.volleyball-achievements .achievement-symbol {
+  width: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
+
+  height: 58px !important;
+  min-height: 58px !important;
+  max-height: 58px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex: 0 0 58px !important;
+  overflow: hidden !important;
+}
+
+
+.volleyball-achievements .achievement-symbol svg {
+  width: 50px !important;
+  height: 50px !important;
+
+  min-width: 50px !important;
+  max-width: 50px !important;
+
+  min-height: 50px !important;
+  max-height: 50px !important;
+
+  display: block !important;
+
+  position: static !important;
+
+  fill: none !important;
+
+  stroke: #102f59 !important;
+  stroke-width: 2.5 !important;
+
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+
+  transform: none !important;
+}
+
+
+/* Very important:
+   keep SVG shapes as outlines, not giant black fills */
+
+.volleyball-achievements .achievement-symbol svg circle,
+.volleyball-achievements .achievement-symbol svg path,
+.volleyball-achievements .achievement-symbol svg line,
+.volleyball-achievements .achievement-symbol svg polyline,
+.volleyball-achievements .achievement-symbol svg polygon {
+  fill: none !important;
+
+  stroke: #102f59 !important;
+  stroke-width: 2.5 !important;
+
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+
+/* Keep the three top items in one row on desktop */
+
+.volleyball-achievements .achievement-stats {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1.35fr !important;
+  align-items: center !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+  .volleyball-achievements .achievement-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+}
