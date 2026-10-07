@@ -1770,13 +1770,15 @@ footer {
 
 }
 
-/* ==========================================
-   VOLLEYBALL ACHIEVEMENTS
-========================================== */
+/* ==================================================
+   VOLLEYBALL ACHIEVEMENTS — FINAL VERSION
+================================================== */
 
 #volleyball-achievements {
-  background: #fff;
+  width: 100%;
+  margin: 0;
   padding: 0 0 40px;
+  background: #ffffff;
   scroll-margin-top: 90px;
 }
 
@@ -1786,31 +1788,40 @@ footer {
 }
 
 
-/* ---------- TOP INFO BAR ---------- */
+/* ==================================================
+   TOP HIGHLIGHTS
+================================================== */
 
 .achievement-stats {
   display: grid;
   grid-template-columns: 1fr 1fr 1.3fr;
 
+  margin: 0 0 26px;
+  padding: 0;
+
   background: #f4f8fc;
 
   border-top: 1px solid #dce5ef;
   border-bottom: 1px solid #dce5ef;
-
-  margin-bottom: 24px;
 }
 
+
 .achievement-stat {
+  min-width: 0;
+  min-height: 88px;
+
   display: flex;
   align-items: center;
 
-  gap: 15px;
+  gap: 16px;
 
   padding: 16px 24px;
-  min-width: 0;
 
   position: relative;
 }
+
+
+/* Vertical divider */
 
 .achievement-stat:not(:last-child)::after {
   content: "";
@@ -1827,13 +1838,15 @@ footer {
 }
 
 
-/* ---------- ICONS ---------- */
+/* ==================================================
+   LINE ICONS
+================================================== */
 
 .achievement-symbol {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
 
-  min-width: 46px;
+  min-width: 48px;
 
   display: flex;
   align-items: center;
@@ -1842,19 +1855,21 @@ footer {
   color: #123f72;
 }
 
-.achievement-symbol svg {
-  width: 42px;
-  height: 42px;
 
+.achievement-symbol svg {
   display: block;
+
+  width: 44px;
+  height: 44px;
 
   fill: none;
   stroke: currentColor;
 
-  stroke-width: 2.5;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
 
 .achievement-symbol svg * {
   fill: none;
@@ -1862,14 +1877,19 @@ footer {
 }
 
 
-/* ---------- TOP TEXT ---------- */
+/* ==================================================
+   TOP TEXT
+================================================== */
 
 .achievement-stat-text {
   min-width: 0;
 }
 
+
 .achievement-stat strong {
   display: block;
+
+  margin: 0;
 
   color: #12345f;
 
@@ -1879,10 +1899,11 @@ footer {
   line-height: 1.25;
 }
 
+
 .achievement-stat span {
   display: block;
 
-  margin-top: 3px;
+  margin-top: 4px;
 
   color: #59687a;
 
@@ -1892,19 +1913,21 @@ footer {
 }
 
 
-/* ---------- TITLE ---------- */
+/* ==================================================
+   SECTION HEADING
+================================================== */
 
 .achievement-heading {
   display: grid;
-
   grid-template-columns: 1fr 1.25fr;
 
   align-items: center;
 
   gap: 35px;
 
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 }
+
 
 .achievement-heading h2 {
   margin: 0;
@@ -1914,8 +1937,11 @@ footer {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 32px;
+  font-weight: 700;
+
   line-height: 1.1;
 }
+
 
 .achievement-heading p {
   margin: 0;
@@ -1933,41 +1959,64 @@ footer {
 }
 
 
-/* ---------- 3 CARDS ---------- */
+/* ==================================================
+   THREE ACHIEVEMENT CARDS
+================================================== */
 
 .achievement-grid {
   display: grid;
 
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
 
   gap: 18px;
 }
 
+
 .achievement-card {
+  min-width: 0;
+
   overflow: hidden;
 
-  background: #fff;
+  background: #ffffff;
 
   border: 1px solid #d7e1ec;
 
   border-radius: 8px;
+
+  box-shadow:
+    0 3px 10px rgba(18, 63, 114, 0.05);
 }
 
 
-/* ---------- PHOTOS ---------- */
+/* ==================================================
+   PHOTOS
+================================================== */
 
 .achievement-card img {
   display: block;
 
   width: 100%;
-  height: 225px;
+  height: 190px;
 
   object-fit: cover;
-  object-position: center;
+
+  /* Default position for photo 2 and photo 3 */
+  object-position: center center;
 }
 
 
-/* ---------- CARD TEXT ---------- */
+/* First AAU photo:
+   move crop upward so Lucy's whole face is visible */
+
+.achievement-card:first-child img {
+  object-position: center 20%;
+}
+
+
+/* ==================================================
+   CARD CAPTIONS
+================================================== */
 
 .achievement-card-copy {
   min-height: 88px;
@@ -1976,8 +2025,9 @@ footer {
 
   text-align: center;
 
-  background: #fff;
+  background: #ffffff;
 }
+
 
 .achievement-card-copy h3 {
   margin: 0;
@@ -1987,8 +2037,11 @@ footer {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 17px;
+  font-weight: 700;
+
   line-height: 1.2;
 }
+
 
 .achievement-card-copy p {
   margin: 7px 0 0;
@@ -1998,7 +2051,10 @@ footer {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 13px;
+
+  line-height: 1.3;
 }
+
 
 .achievement-card-copy p span {
   display: inline;
@@ -2007,13 +2063,16 @@ footer {
 }
 
 
-/* ---------- MOBILE ---------- */
+/* ==================================================
+   TABLET / PHONE
+================================================== */
 
 @media (max-width: 800px) {
 
   .achievement-stats {
     grid-template-columns: 1fr;
   }
+
 
   .achievement-stat:not(:last-child)::after {
     top: auto;
@@ -2026,43 +2085,31 @@ footer {
     height: 1px;
   }
 
+
   .achievement-heading {
     grid-template-columns: 1fr;
 
     gap: 8px;
   }
 
+
   .achievement-heading p {
     text-align: left;
   }
+
 
   .achievement-grid {
     grid-template-columns: 1fr;
   }
 
+
   .achievement-card img {
-    height: 240px;
+    height: 220px;
   }
+
+
+  .achievement-card:first-child img {
+    object-position: center 20%;
+  }
+
 }
-
-
-
-
-
- 
-  
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
