@@ -1769,59 +1769,48 @@ footer {
   }
 
 }
-/* ==================================================
-   VOLLEYBALL ACHIEVEMENTS
-   ================================================== */
 
-.volleyball-achievements {
-  width: 100%;
-  padding: 0 0 42px;
-  background: #ffffff;
-  color: #102f59;
+/* ==========================================
+   VOLLEYBALL ACHIEVEMENTS
+========================================== */
+
+#volleyball-achievements {
+  background: #fff;
+  padding: 0 0 40px;
+  scroll-margin-top: 90px;
 }
 
-.volleyball-achievements .section-container {
-  width: min(1360px, 92%);
+#volleyball-achievements .section-container {
+  width: min(1180px, 92%);
   margin: 0 auto;
 }
 
 
-/* ==================================================
-   TOP THREE HIGHLIGHTS
-   Varsity Starter / Club Volleyball / Competitive Athlete
-   ================================================== */
+/* ---------- TOP INFO BAR ---------- */
 
 .achievement-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.35fr;
+  grid-template-columns: 1fr 1fr 1.3fr;
 
-  margin-bottom: 28px;
+  background: #f4f8fc;
 
-  background: linear-gradient(
-    90deg,
-    #f6faff 0%,
-    #edf5fc 100%
-  );
+  border-top: 1px solid #dce5ef;
+  border-bottom: 1px solid #dce5ef;
 
-  border-top: 1px solid #e1e9f2;
-  border-bottom: 1px solid #dbe3ee;
+  margin-bottom: 24px;
 }
 
-
 .achievement-stat {
-  min-height: 96px;
-
   display: flex;
   align-items: center;
 
-  gap: 20px;
-  padding: 18px 30px;
+  gap: 15px;
+
+  padding: 16px 24px;
+  min-width: 0;
 
   position: relative;
 }
-
-
-/* Vertical divider */
 
 .achievement-stat:not(:last-child)::after {
   content: "";
@@ -1829,478 +1818,251 @@ footer {
   position: absolute;
 
   right: 0;
-  top: 23%;
+  top: 22%;
 
   width: 1px;
-  height: 54%;
+  height: 56%;
 
-  background: #cbd7e5;
+  background: #ccd7e4;
 }
 
 
-/* ==================================================
-   LINE ICONS
-   ================================================== */
+/* ---------- ICONS ---------- */
 
 .achievement-symbol {
-  width: 58px;
-  min-width: 58px;
-  height: 58px;
+  width: 46px;
+  height: 46px;
+
+  min-width: 46px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #102f59;
+  color: #123f72;
 }
 
-
 .achievement-symbol svg {
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
+
+  display: block;
 
   fill: none;
-
   stroke: currentColor;
-  stroke-width: 2.5;
 
+  stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+.achievement-symbol svg * {
+  fill: none;
+  stroke: currentColor;
+}
 
-/* ==================================================
-   TOP TEXT
-   ================================================== */
+
+/* ---------- TOP TEXT ---------- */
 
 .achievement-stat-text {
   min-width: 0;
 }
 
-
 .achievement-stat strong {
   display: block;
 
-  color: #0e2d57;
+  color: #12345f;
 
-  font-size: 1.08rem;
+  font-size: 16px;
   font-weight: 700;
 
   line-height: 1.25;
 }
 
-
 .achievement-stat span {
   display: block;
 
-  margin-top: 4px;
+  margin-top: 3px;
 
-  color: #4f5f73;
+  color: #59687a;
 
-  font-size: 0.84rem;
-  line-height: 1.35;
+  font-size: 13px;
+
+  line-height: 1.3;
 }
 
 
-/* ==================================================
-   SECTION TITLE
-   Volleyball Achievements
-   ================================================== */
+/* ---------- TITLE ---------- */
 
 .achievement-heading {
   display: grid;
 
-  grid-template-columns:
-    1fr 1.15fr;
+  grid-template-columns: 1fr 1.25fr;
 
-  align-items: end;
+  align-items: center;
 
-  gap: 40px;
+  gap: 35px;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
-
 
 .achievement-heading h2 {
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  color: #12345f;
 
-  font-size:
-    clamp(2rem, 3vw, 2.65rem);
+  font-family: Georgia, "Times New Roman", serif;
 
-  font-weight: 700;
-
+  font-size: 32px;
   line-height: 1.1;
-
-  color: #102f59;
 }
-
 
 .achievement-heading p {
   margin: 0;
 
   text-align: right;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  color: #5d6878;
 
-  font-size: 0.96rem;
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
   font-style: italic;
 
-  line-height: 1.5;
-
-  color: #566275;
+  line-height: 1.45;
 }
 
 
-/* ==================================================
-   THREE ACHIEVEMENT CARDS
-   ================================================== */
+/* ---------- 3 CARDS ---------- */
 
 .achievement-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-  gap: 20px;
+  gap: 18px;
 }
-
 
 .achievement-card {
   overflow: hidden;
 
-  background: #ffffff;
+  background: #fff;
 
-  border:
-    1px solid #d7e1ed;
+  border: 1px solid #d7e1ec;
 
-  border-radius: 9px;
-
-  box-shadow:
-    0 4px 14px
-    rgba(18, 63, 114, 0.05);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  border-radius: 8px;
 }
 
 
-/* Small hover effect */
-
-.achievement-card:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 9px 22px
-    rgba(18, 63, 114, 0.12);
-}
-
-
-/* ==================================================
-   ACHIEVEMENT PHOTOS
-   ================================================== */
+/* ---------- PHOTOS ---------- */
 
 .achievement-card img {
   display: block;
 
   width: 100%;
-
-  aspect-ratio: 1.46 / 1;
+  height: 225px;
 
   object-fit: cover;
-
   object-position: center;
 }
 
 
-/* ==================================================
-   CARD TEXT
-   ================================================== */
+/* ---------- CARD TEXT ---------- */
 
 .achievement-card-copy {
-  min-height: 98px;
+  min-height: 88px;
 
-  padding:
-    14px 16px 16px;
+  padding: 12px 14px 14px;
 
   text-align: center;
 
-  background:
-    linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #f8fbfe 100%
-    );
+  background: #fff;
 }
-
 
 .achievement-card-copy h3 {
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  color: #12345f;
 
-  color: #102f59;
+  font-family: Georgia, "Times New Roman", serif;
 
-  font-size: 1.05rem;
-  font-weight: 700;
-
+  font-size: 17px;
   line-height: 1.2;
 }
 
-
 .achievement-card-copy p {
-  margin:
-    9px 0 0;
+  margin: 7px 0 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  color: #59687a;
 
-  color: #536176;
+  font-family: Georgia, "Times New Roman", serif;
 
-  font-size: 0.86rem;
-
-  line-height: 1.4;
+  font-size: 13px;
 }
-
 
 .achievement-card-copy p span {
   display: inline;
 
-  padding:
-    0 8px;
-
-  color: #536176;
+  padding: 0 7px;
 }
 
 
-/* ==================================================
-   TABLET
-   ================================================== */
+/* ---------- MOBILE ---------- */
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
   .achievement-stats {
     grid-template-columns: 1fr;
   }
 
-
-  .achievement-stat {
-    min-height: 82px;
-
-    padding:
-      15px 24px;
-  }
-
-
-  /* Change vertical divider to horizontal divider */
-
   .achievement-stat:not(:last-child)::after {
     top: auto;
 
+    left: 20px;
+    right: 20px;
     bottom: 0;
-
-    left: 24px;
-    right: 24px;
 
     width: auto;
     height: 1px;
   }
 
-
   .achievement-heading {
     grid-template-columns: 1fr;
 
-    gap: 12px;
+    gap: 8px;
   }
-
 
   .achievement-heading p {
     text-align: left;
   }
 
-
   .achievement-grid {
     grid-template-columns: 1fr;
   }
 
+  .achievement-card img {
+    height: 240px;
+  }
 }
 
 
-/* ==================================================
-   PHONE
-   ================================================== */
-
-@media (max-width: 520px) {
-
-  .volleyball-achievements {
-    padding-bottom: 30px;
-  }
 
 
-  .volleyball-achievements .section-container {
-    width: 92%;
-  }
+
+ 
+  
 
 
-  .achievement-stat {
-    gap: 15px;
-
-    padding:
-      14px 16px;
-  }
+ 
+ 
 
 
-  .achievement-symbol {
-    width: 48px;
-    min-width: 48px;
-    height: 48px;
-  }
 
 
-  .achievement-symbol svg {
-    width: 44px;
-    height: 44px;
-  }
 
 
-  .achievement-stat strong {
-    font-size: 1rem;
-  }
 
 
-  .achievement-stat span {
-    font-size: 0.78rem;
-  }
 
 
-  .achievement-heading {
-    margin-bottom: 17px;
-  }
 
-
-  .achievement-heading h2 {
-    font-size: 2rem;
-  }
-
-
-  .achievement-heading p {
-    font-size: 0.88rem;
-  }
-
-
-  .achievement-grid {
-    gap: 16px;
-  }
-
-
-  .achievement-card-copy {
-    min-height: auto;
-  }
-
-}
-
-
-/* ==================================================
-   ACHIEVEMENTS ANCHOR POSITION
-   ================================================== */
-
-#volleyball-achievements {
-  scroll-margin-top: 90px;
-}
-/* =========================================
-   FIX VOLLEYBALL ACHIEVEMENT SVG ICONS
-   ========================================= */
-
-.volleyball-achievements .achievement-symbol {
-  width: 58px !important;
-  min-width: 58px !important;
-  max-width: 58px !important;
-
-  height: 58px !important;
-  min-height: 58px !important;
-  max-height: 58px !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  flex: 0 0 58px !important;
-  overflow: hidden !important;
-}
-
-
-.volleyball-achievements .achievement-symbol svg {
-  width: 50px !important;
-  height: 50px !important;
-
-  min-width: 50px !important;
-  max-width: 50px !important;
-
-  min-height: 50px !important;
-  max-height: 50px !important;
-
-  display: block !important;
-
-  position: static !important;
-
-  fill: none !important;
-
-  stroke: #102f59 !important;
-  stroke-width: 2.5 !important;
-
-  stroke-linecap: round !important;
-  stroke-linejoin: round !important;
-
-  transform: none !important;
-}
-
-
-/* Very important:
-   keep SVG shapes as outlines, not giant black fills */
-
-.volleyball-achievements .achievement-symbol svg circle,
-.volleyball-achievements .achievement-symbol svg path,
-.volleyball-achievements .achievement-symbol svg line,
-.volleyball-achievements .achievement-symbol svg polyline,
-.volleyball-achievements .achievement-symbol svg polygon {
-  fill: none !important;
-
-  stroke: #102f59 !important;
-  stroke-width: 2.5 !important;
-
-  stroke-linecap: round !important;
-  stroke-linejoin: round !important;
-}
-
-
-/* Keep the three top items in one row on desktop */
-
-.volleyball-achievements .achievement-stats {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1.35fr !important;
-  align-items: center !important;
-}
-
-
-/* Mobile */
-
-@media (max-width: 900px) {
-
-  .volleyball-achievements .achievement-stats {
-    grid-template-columns: 1fr !important;
-  }
-
-}
