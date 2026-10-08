@@ -2796,33 +2796,7 @@ footer {
   }
 
 }
-/* ART - FULL WIDTH ON DESKTOP */
 
-#art {
-  grid-column: 1 / -1;
-}
-
-.art-grid {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.art-grid img {
-  height: 180px;
-  object-fit: contain;
-}
-
-@media (max-width: 900px) {
-  .art-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .art-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 /* VOLLEYBALL ACHIEVEMENTS - 4 CARDS IN ONE ROW */
 
 .achievement-grid {
@@ -2850,5 +2824,20 @@ footer {
 @media (max-width: 600px) {
   .achievement-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .art-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .art-grid img {
+    height: 210px;
   }
 }
