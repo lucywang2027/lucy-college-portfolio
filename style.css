@@ -2114,3 +2114,370 @@ footer {
   }
 
 }
+
+
+/* =========================================
+   ENGINEERING & DESIGN
+========================================= */
+
+.engineering-section {
+  padding: 55px 0 60px;
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #ffffff 45%,
+      #f8fbff 100%
+    );
+  scroll-margin-top: 90px;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.engineering-heading {
+  max-width: 760px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.engineering-heading h2 {
+  margin: 4px 0 12px;
+  color: #173d6b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.engineering-heading > p:last-child {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #6b7b8e;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   THREE FEATURED PROJECTS
+========================================= */
+
+.engineering-featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.engineering-project {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dbe6f2;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(18, 63, 114, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.engineering-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(18, 63, 114, 0.12);
+}
+
+
+/* ---------- MAIN PROJECT IMAGE ---------- */
+
+.engineering-main-image {
+  height: 245px;
+  padding: 12px;
+  background: #f7f9fc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.engineering-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* ---------- TECHNICAL DRAWING THUMBNAILS ---------- */
+
+.engineering-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+
+  padding: 8px 12px 0;
+}
+
+.engineering-thumbnails img {
+  width: 100%;
+  height: 82px;
+  padding: 4px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 6px;
+}
+
+
+/* ---------- PROJECT TEXT ---------- */
+
+.engineering-project-copy {
+  padding: 16px 18px 20px;
+}
+
+.engineering-project-copy h3 {
+  margin: 0 0 7px;
+
+  color: #173d6b;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.engineering-project-copy p {
+  margin: 0;
+
+  color: #718096;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   26 SECOND ENGINEERING VIDEO
+========================================= */
+
+.engineering-reel {
+  margin-top: 34px;
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 30px;
+  align-items: center;
+
+  background: #eef4fa;
+  border: 1px solid #d7e3ef;
+  border-radius: 16px;
+}
+
+.engineering-reel-text {
+  padding: 10px 8px 10px 10px;
+}
+
+.engineering-reel-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #3a79c9;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.engineering-reel-text h3 {
+  margin: 0 0 10px;
+
+  color: #173d6b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+.engineering-reel-text p {
+  margin: 0;
+
+  color: #69798c;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+
+/* ---------- VIDEO ---------- */
+
+.engineering-video {
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 18px
+    rgba(18, 63, 114, 0.10);
+}
+
+.engineering-video video {
+  display: block;
+
+  width: 100%;
+  max-height: 390px;
+
+  background: #eaf0f6;
+}
+
+
+/* =========================================
+   MORE CAD PROJECTS
+========================================= */
+
+.engineering-more {
+  margin-top: 38px;
+}
+
+.engineering-more-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.engineering-more-heading h3 {
+  margin: 0 0 5px;
+
+  color: #173d6b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+.engineering-more-heading p {
+  margin: 0;
+
+  color: #788697;
+  font-size: 0.86rem;
+}
+
+
+/* ---------- SMALL PROJECT GRID ---------- */
+
+.engineering-more-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.engineering-more-grid figure {
+  margin: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #dbe6f2;
+  border-radius: 10px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.engineering-more-grid figure:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 7px 18px
+    rgba(18, 63, 114, 0.10);
+}
+
+.engineering-more-grid img {
+  width: 100%;
+  height: 125px;
+
+  padding: 7px;
+
+  object-fit: contain;
+
+  background: #f8fafc;
+}
+
+.engineering-more-grid figcaption {
+  padding: 9px 6px 11px;
+
+  color: #355777;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   ENGINEERING TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .engineering-featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engineering-reel {
+    grid-template-columns: 1fr;
+  }
+
+  .engineering-more-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   ENGINEERING PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .engineering-section {
+    padding: 40px 0 45px;
+  }
+
+  .engineering-heading {
+    margin-bottom: 26px;
+  }
+
+  .engineering-heading h2 {
+    font-size: 1.75rem;
+  }
+
+  .engineering-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .engineering-main-image {
+    height: 235px;
+  }
+
+  .engineering-reel {
+    padding: 17px;
+    gap: 18px;
+  }
+
+  .engineering-reel-text {
+    text-align: center;
+  }
+
+  .engineering-reel-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .engineering-more-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engineering-more-grid img {
+    height: 120px;
+  }
+
+}
+
