@@ -758,13 +758,13 @@ border: 2px solid rgba(255, 255, 255, 0.9);
 
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 12px;
 }
 
 .art-grid img {
   width: 100%;
-  height: 190px;
+  height: 180px;
   object-fit: contain;
   border-radius: 6px;
   transition: 0.3s;
@@ -772,6 +772,10 @@ border: 2px solid rgba(255, 255, 255, 0.9);
 
 .art-grid img:hover {
   transform: translateY(-4px);
+
+   #art {
+      gride-colum: 1 / -1;
+   }
 
   box-shadow:
     0 8px 20px
@@ -2791,4 +2795,31 @@ footer {
     height: 230px;
   }
 
+}
+/* ART - FULL WIDTH ON DESKTOP */
+
+#art {
+  grid-column: 1 / -1;
+}
+
+.art-grid {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.art-grid img {
+  height: 180px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .art-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
