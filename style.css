@@ -756,10 +756,17 @@ border: 2px solid rgba(255, 255, 255, 0.9);
    ART
 ===================================== */
 
+/* ART GALLERY */
+
+#art {
+  grid-column: 1 / -1;
+}
+
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 12px;
+  width: 100%;
 }
 
 .art-grid img {
@@ -772,14 +779,7 @@ border: 2px solid rgba(255, 255, 255, 0.9);
 
 .art-grid img:hover {
   transform: translateY(-4px);
-
-   #art {
-      gride-colum: 1 / -1;
-   }
-
-  box-shadow:
-    0 8px 20px
-    rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 
