@@ -1578,7 +1578,7 @@ footer {
 /* Leadership + Community Service 稍微缩窄并居中 */
 #leadership,
 #service {
-  width: 94%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1837,7 +1837,7 @@ footer {
 }
 
 #volleyball-achievements .section-container {
-  width: min(1180px, 92%);
+  width: min(1260px, 94%);
   margin: 0 auto;
 
   background: #ffffff;
