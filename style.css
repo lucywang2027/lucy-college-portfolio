@@ -750,7 +750,53 @@ border: 2px solid rgba(255, 255, 255, 0.9);
   color: #718096;
 }
 
+/* VOLLEYBALL HIGHLIGHT PLAY BUTTON */
 
+.highlight-image {
+  position: relative;
+}
+
+.highlight-play {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 66px;
+  height: 66px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #174f89;
+
+  font-size: 27px;
+
+  padding-left: 4px;
+
+  box-shadow:
+    0 5px 18px
+    rgba(0, 0, 0, 0.24);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.achievement-highlight:hover .highlight-play {
+  transform:
+    translate(-50%, -50%)
+    scale(1.1);
+
+  background: #ffffff;
+}
 
 /* =====================================
    ART
@@ -1781,16 +1827,43 @@ footer {
 #volleyball-achievements {
   width: 100%;
   margin: 0;
-  padding: 0 0 40px;
-  background: #ffffff;
+  padding: 28px 0;
+  background: #f8fbff;
   scroll-margin-top: 90px;
 }
 
 #volleyball-achievements .section-container {
   width: min(1180px, 92%);
   margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe6f2;
+  border-radius: 14px;
+
+  padding: 20px;
+
+  box-shadow:
+    0 5px 18px
+    rgba(18, 63, 114, 0.04);
+}
+/* VOLLEYBALL MAIN HEADER */
+
+.volleyball-main-heading {
+  margin-bottom: 20px;
 }
 
+.volleyball-main-heading .card-icon svg {
+  width: 100%;
+  height: 100%;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* ==================================================
    TOP HIGHLIGHTS
@@ -1933,17 +2006,20 @@ footer {
 }
 
 
-.achievement-heading h2 {
+..achievement-heading h2 {
   margin: 0;
 
-  color: #12345f;
+  color: #123f72;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 1.55rem;
+  font-weight: 500;
 
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 
@@ -1952,16 +2028,18 @@ footer {
 
   text-align: right;
 
-  color: #5d6878;
+  color: #718096;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  font-size: 14px;
-  font-style: italic;
+  font-size: 0.9rem;
+  font-style: normal;
 
-  line-height: 1.45;
+  line-height: 1.5;
 }
-
 
 /* ==================================================
    THREE ACHIEVEMENT CARDS
@@ -2799,33 +2877,7 @@ footer {
 
 /* VOLLEYBALL ACHIEVEMENTS - 4 CARDS IN ONE ROW */
 
-.achievement-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
 
-.achievement-card {
-  min-width: 0;
-}
-
-.achievement-card img,
-.highlight-image img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-@media (max-width: 900px) {
-  .achievement-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .achievement-grid {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 900px) {
   .art-grid {
     grid-template-columns: repeat(4, 1fr);
