@@ -3009,3 +3009,6 @@ footer {
   object-fit: contain !important;
   background: #ffffff !important;
 }
+#awards {
+  scroll-margin-top: 100px;
+}
