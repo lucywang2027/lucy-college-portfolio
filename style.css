@@ -1130,7 +1130,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
-
+  .music-grid > img {
+   height: auto;
+   object-fit: contain;
+  }
   .leadership-grid {
     grid-template-columns: 1fr;
   }
