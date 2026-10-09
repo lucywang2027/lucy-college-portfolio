@@ -2565,15 +2565,14 @@ footer {
 
 }
 
-
 /* =========================================
-   LEADERSHIP & ACADEMICS - NEW DESKTOP LAYOUT
+   LEADERSHIP & ACADEMICS
 ========================================= */
 
 .leadership-academics {
   grid-column: 1 / -1;
 
-  padding: 34px 20px 30px;
+  padding: 28px 20px 30px;
 
   background:
     linear-gradient(
@@ -2589,67 +2588,82 @@ footer {
 }
 
 
-/* ---------- SECTION HEADING ---------- */
+/* =========================================
+   MAIN HEADING
+========================================= */
 
-.leadership-academics-heading {
-  max-width: 1000px;
+.leadership-main-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
 
-  margin: 0 auto 26px;
-
-  text-align: left;
+  margin-bottom: 24px;
 }
 
-.leadership-academics-heading .section-label {
-  margin-bottom: 5px;
+.leadership-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2f5ea7;
 }
 
-.leadership-academics-heading h2 {
-  margin: 0 0 8px;
+.leadership-icon svg {
+  width: 46px;
+  height: 46px;
+  display: block;
+}
 
-  color: #173d6b;
+.leadership-main-heading .section-label {
+  margin-bottom: 4px;
+}
+
+.leadership-main-heading h2 {
+  margin: 0 0 7px;
+
+  color: #123f72;
 
   font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  font-size: 2rem;
-
-  font-weight: 400;
+  font-size: 1.55rem;
+  font-weight: 500;
 
   line-height: 1.25;
 }
 
-.leadership-academics-heading > p:last-child {
-  max-width: 900px;
+.leadership-intro {
+  max-width: 880px;
 
   margin: 0;
 
-  color: #68798d;
+  color: #718096;
 
-  font-size: 0.92rem;
-
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 
 /* =========================================
-   FOUR CARDS
+   THREE MAIN CARDS
 ========================================= */
 
 .leadership-academics-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+    repeat(3, minmax(0, 1fr));
 
-  gap: 14px;
+  gap: 16px;
 
   align-items: stretch;
 }
-
-
-/* ---------- CARD ---------- */
 
 .la-card {
   overflow: hidden;
@@ -2657,7 +2671,6 @@ footer {
   background: #ffffff;
 
   border: 1px solid #dfe8f1;
-
   border-radius: 11px;
 
   box-shadow:
@@ -2677,19 +2690,12 @@ footer {
     rgba(20, 60, 100, 0.11);
 }
 
-
-/* ---------- TOP IMAGE ---------- */
-
 .la-card > img {
   width: 100%;
-
-  height: 180px;
+  height: 190px;
 
   object-fit: cover;
 }
-
-
-/* ---------- TEXT ---------- */
 
 .la-card-content {
   padding: 15px 16px 18px;
@@ -2703,7 +2709,6 @@ footer {
   color: #3176c5;
 
   font-size: 0.68rem;
-
   font-weight: 700;
 
   letter-spacing: 0.16em;
@@ -2715,15 +2720,14 @@ footer {
   color: #173d6b;
 
   font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  font-weight: 600;
 
-  font-weight: 400;
-
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .la-card-content p {
@@ -2732,7 +2736,6 @@ footer {
   color: #6c7c8f;
 
   font-size: 0.8rem;
-
   line-height: 1.5;
 }
 
@@ -2746,82 +2749,124 @@ footer {
 
 
 /* =========================================
-   AWARDS CARD
+   AWARDS & HONORS ROW
 ========================================= */
 
-.awards-images {
-  height: 180px;
+.awards-honors-row {
+  margin-top: 22px;
 
-  padding: 8px;
+  padding: 18px;
 
   display: grid;
 
-  grid-template-rows:
-    1fr 1fr;
+  grid-template-columns:
+    0.85fr 1.25fr 1.25fr;
 
-  gap: 6px;
+  gap: 18px;
 
-  background: #f9fbfd;
+  align-items: stretch;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe6f2;
+  border-radius: 12px;
 }
 
-.awards-images img {
+
+/* LEFT AWARDS TITLE */
+
+.awards-heading {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 10px 6px;
+}
+
+.awards-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2f5ea7;
+}
+
+.awards-icon svg {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.awards-heading h3 {
+  margin: 0 0 7px;
+
+  color: #173d6b;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.awards-heading p {
+  margin: 0;
+
+  color: #718096;
+
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+
+/* CERTIFICATE CARDS */
+
+.award-certificate {
+  overflow: hidden;
+
+  background: #f9fbfd;
+
+  border: 1px solid #dfe8f1;
+  border-radius: 10px;
+}
+
+.award-certificate img {
   width: 100%;
 
-  height: 100%;
+  height: 210px;
 
-  min-height: 0;
+  padding: 10px;
 
   object-fit: contain;
 
-  background: white;
+  background: #ffffff;
 }
 
+.award-certificate-copy {
+  padding: 12px 14px 14px;
 
-/* ---------- INDIVIDUAL AWARD ---------- */
-
-.award-item {
-  position: relative;
-
-  margin-top: 11px;
-
-  padding-left: 13px;
+  text-align: center;
 }
 
-.award-item::before {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  top: 7px;
-
-  width: 5px;
-  height: 5px;
-
-  background: #3176c5;
-
-  border-radius: 50%;
-}
-
-.award-item strong {
+.award-certificate-copy strong {
   display: block;
 
   color: #173d6b;
 
-  font-size: 0.78rem;
-
+  font-size: 0.84rem;
   line-height: 1.35;
 }
 
-.award-item span {
+.award-certificate-copy span {
   display: block;
 
-  margin-top: 2px;
+  margin-top: 4px;
 
   color: #748395;
 
-  font-size: 0.72rem;
-
+  font-size: 0.75rem;
   line-height: 1.35;
 }
 
@@ -2830,11 +2875,19 @@ footer {
    TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
   .leadership-academics-grid {
     grid-template-columns:
       repeat(2, 1fr);
+  }
+
+  .awards-honors-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .awards-heading {
+    grid-column: 1 / -1;
   }
 
 }
@@ -2847,54 +2900,50 @@ footer {
 @media (max-width: 600px) {
 
   .leadership-academics {
-    padding: 26px 14px;
+    padding: 24px 14px;
   }
 
-
-  .leadership-academics-heading {
-    text-align: center;
+  .leadership-main-heading {
+    gap: 10px;
   }
 
-
-  .leadership-academics-heading h2 {
-    font-size: 1.6rem;
+  .leadership-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
   }
 
+  .leadership-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .leadership-main-heading h2 {
+    font-size: 1.35rem;
+  }
 
   .leadership-academics-grid {
     grid-template-columns: 1fr;
   }
 
-
   .la-card > img {
     height: 210px;
   }
 
+  .awards-honors-row {
+    grid-template-columns: 1fr;
+  }
 
-  .awards-images {
+  .awards-heading {
+    grid-column: auto;
+  }
+
+  .award-certificate img {
     height: 230px;
   }
 
 }
 
-/* VOLLEYBALL ACHIEVEMENTS - 4 CARDS IN ONE ROW */
-
-
-@media (max-width: 900px) {
-  .art-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .art-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .art-grid img {
-    height: 210px;
-  }
-}
 .volleyball-main-heading .card-icon img {
   width: 44px !important;
   height: 44px !important;
