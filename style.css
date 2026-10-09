@@ -2972,3 +2972,40 @@ footer {
   object-fit: contain;
   display: block;
 }
+
+/* ===== FINAL MUSIC FIX ===== */
+
+.music-grid {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 12px !important;
+}
+
+.music-grid .certificate-card {
+  order: 1 !important;
+}
+
+.music-grid > img {
+  order: 2 !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+}
+
+.certificate-card img {
+  width: 100% !important;
+  height: 205px !important;
+  object-fit: contain !important;
+  object-position: top center !important;
+}
+
+
+/* ===== FINAL AWARDS CERTIFICATE FIX ===== */
+
+.award-certificate img {
+  width: 100% !important;
+  height: 260px !important;
+  padding: 4px !important;
+  object-fit: contain !important;
+  background: #ffffff !important;
+}
