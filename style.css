@@ -2091,11 +2091,13 @@ footer {
 /* First AAU photo:
    move crop upward so Lucy's whole face is visible */
 
-.achievement-card:first-child img {
-   heght:210px;
-  object-position: center top;
+.achievement-grid .achievement-card:first-child img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  object-position: center center;
+  background: #f8fafc;
 }
-
 
 /* ==================================================
    CARD CAPTIONS
