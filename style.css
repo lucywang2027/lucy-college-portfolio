@@ -2902,3 +2902,13 @@ footer {
   object-fit: contain;
   display: block;
 }
+/* SMALL VOLLEYBALL ICON */
+
+.achievement-symbol .achievement-volleyball-icon {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  object-fit: contain;
+  display: block;
+}
