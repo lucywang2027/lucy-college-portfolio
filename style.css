@@ -3012,3 +3012,15 @@ footer {
 #awards {
   scroll-margin-top: 100px;
 }
+.awards-heading h3 {
+  font-size: 1.45rem;
+  color: #173d6b;
+  margin-bottom: 6px;
+}
+
+.awards-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2f6fb4;
+  margin-bottom: 6px;
+}
