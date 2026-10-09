@@ -2693,10 +2693,15 @@ footer {
 .la-card > img {
   width: 100%;
   height: 190px;
-
   object-fit: cover;
 }
+/* Leadership middle photo - show full image */
 
+.leadership-academics-grid .la-card:nth-child(2) > img {
+  object-fit: contain;
+  object-position: center;
+  background: #f8fafc;
+}
 .la-card-content {
   padding: 15px 16px 18px;
 }
