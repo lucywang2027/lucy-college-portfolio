@@ -2893,3 +2893,12 @@ footer {
     height: 210px;
   }
 }
+.volleyball-main-heading .card-icon img {
+  width: 44px !important;
+  height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+
+  object-fit: contain;
+  display: block;
+}
