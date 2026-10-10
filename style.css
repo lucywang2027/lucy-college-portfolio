@@ -1145,14 +1145,14 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .music-grid > img {
-    width: 100%;
-    height: 100%;
-    max-height: 280px; /* 控制手機端最大高度，避免太拉長 */
-    object-fit: cover;
-    object-position: center top; /* 確保人像與鋼琴上半部分為視覺焦點 */
-    border-radius: 8px;
-  }
+ .music-grid > img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+}
   .leadership-grid {
     grid-template-columns: 1fr;
   }
@@ -2995,31 +2995,6 @@ footer {
   display: block;
 }
 
-/* ===== FINAL MUSIC FIX ===== */
-
-.music-grid {
-  display: grid !important;
-  grid-template-columns: 1.15fr 0.85fr !important;
-  gap: 12px !important;
-}
-
-.music-grid .certificate-card {
-  order: 1 !important;
-}
-
-.music-grid > img {
-  order: 2 !important;
-  height: 220px !important;
-  object-fit: cover !important;
-  border-radius: 8px !important;
-}
-
-.certificate-card img {
-  width: 100% !important;
-  height: 205px !important;
-  object-fit: contain !important;
-  object-position: top center !important;
-}
 
 
 /* ===== FINAL AWARDS CERTIFICATE FIX ===== */
