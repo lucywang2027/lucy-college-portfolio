@@ -739,11 +739,11 @@
 
   <!-- 4. VOLLEYBALL HIGHLIGHT -->
   <a
-    class="achievement-card achievement-highlight"
-    href="https://www.youtube.com/embed?listType=playlist&list=PLHcpbSh4NYRc&autoplay=1&playsinline=1"
-    target="_blank"
-    rel="noopener noreferrer">
-
+  class="achievement-card achievement-highlight"
+  href="https://www.youtube.com/watch?v=K-hqTCpKHnc&list=PLHcpbSh4NYRc&index=1"
+  target="_blank"
+  rel="noopener noreferrer">
+    
     <div class="highlight-image">
 
       <img
@@ -1426,7 +1426,12 @@ by Princeton Township, sharing my love of the sport and
     }, 50);
   });
 
- 
+const volleyballHighlight = document.querySelector('.achievement-highlight');
+
+if (volleyballHighlight && window.innerWidth <= 768) {
+  volleyballHighlight.href =
+    'https://www.youtube.com/embed?listType=playlist&list=PLHcpbSh4NYRc&autoplay=1&playsinline=1';
+} 
 </script>
 
 </body>
