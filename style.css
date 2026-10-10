@@ -3037,3 +3037,60 @@ footer {
   }
 
 }
+
+/* ===== CAD IMAGE LIGHTBOX ===== */
+
+.engineering-more-grid img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.engineering-more-grid img:hover {
+  transform: scale(1.04);
+}
+
+.cad-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.82);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.cad-lightbox.active {
+  display: flex;
+}
+
+.cad-lightbox img {
+  max-width: 90vw;
+  max-height: 88vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  background: white;
+  border-radius: 10px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.cad-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+
+  color: white;
+  font-size: 42px;
+  font-weight: 300;
+
+  cursor: pointer;
+  line-height: 1;
+}
