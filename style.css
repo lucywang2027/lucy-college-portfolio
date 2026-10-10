@@ -26,7 +26,22 @@ body {
   line-height: 1.6;
 }
 
+/* ===== MOBILE MUSIC PHOTO FIX ===== */
+@media (max-width: 680px) {
 
+  .music-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .music-grid > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+}
 img {
   display: block;
   width: 100%;
