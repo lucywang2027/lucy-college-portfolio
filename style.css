@@ -3046,3 +3046,19 @@ footer {
   color: #2f6fb4;
   margin-bottom: 6px;
 }
+/* ===== REAL FINAL MOBILE MUSIC FIX ===== */
+@media (max-width: 680px) {
+
+  .music-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .music-grid > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+}
