@@ -2316,6 +2316,12 @@ footer {
   object-fit: contain;
 }
 
+.engineering-main-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 /* ---------- TECHNICAL DRAWING THUMBNAILS ---------- */
 
