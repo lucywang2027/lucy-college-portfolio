@@ -1432,8 +1432,36 @@ if (volleyballHighlight && window.innerWidth <= 768) {
   volleyballHighlight.href =
     'https://www.youtube.com/embed?listType=playlist&list=PLHcpbSh4NYRc&autoplay=1&playsinline=1';
 } 
-</script>
 
+const cadImages = document.querySelectorAll('.engineering-more-grid img');
+const cadLightbox = document.getElementById('cadLightbox');
+const cadLightboxImage = document.getElementById('cadLightboxImage');
+const cadLightboxClose = document.getElementById('cadLightboxClose');
+
+cadImages.forEach(function(img) {
+  img.addEventListener('click', function() {
+    cadLightboxImage.src = this.src;
+    cadLightboxImage.alt = this.alt;
+    cadLightbox.classList.add('active');
+  });
+});
+
+cadLightboxClose.addEventListener('click', function() {
+  cadLightbox.classList.remove('active');
+});
+
+cadLightbox.addEventListener('click', function(event) {
+  if (event.target === cadLightbox) {
+    cadLightbox.classList.remove('active');
+  }
+});
+</script>
+  
+<div class="cad-lightbox" id="cadLightbox">
+  <span class="cad-lightbox-close" id="cadLightboxClose">&times;</span>
+  <img id="cadLightboxImage" src="" alt="Expanded CAD project">
+</div>
+  
 </body>
 
 </html>
