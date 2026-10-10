@@ -1433,7 +1433,9 @@ if (volleyballHighlight && window.innerWidth <= 768) {
     'https://www.youtube.com/embed?listType=playlist&list=PLHcpbSh4NYRc&autoplay=1&playsinline=1';
 } 
 
-const cadImages = document.querySelectorAll('.engineering-more-grid img');
+const cadImages = document.querySelectorAll(
+  '.engineering-main-image img, .engineering-more-grid img'
+);
 const cadLightbox = document.getElementById('cadLightbox');
 const cadLightboxImage = document.getElementById('cadLightboxImage');
 const cadLightboxClose = document.getElementById('cadLightboxClose');
