@@ -1465,7 +1465,40 @@ cadLightbox.addEventListener('click', function(event) {
 });
 </script>
   
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
+  const lightbox = document.getElementById('cadLightbox');
+  const lightboxImage = document.getElementById('cadLightboxImage');
+  const closeButton = document.getElementById('cadLightboxClose');
+
+  document.addEventListener('click', function (event) {
+
+    const img = event.target.closest(
+      '.engineering-main-image img, .engineering-thumbnails img, .engineering-more-grid img'
+    );
+
+    if (img) {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt || 'CAD project';
+      lightbox.classList.add('active');
+    }
+
+  });
+
+  closeButton.addEventListener('click', function (event) {
+    event.stopPropagation();
+    lightbox.classList.remove('active');
+  });
+
+  lightbox.addEventListener('click', function (event) {
+    if (event.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+
+});
+</script>
   
 </body>
 
