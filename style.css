@@ -3041,12 +3041,14 @@ footer {
 /* ===== CAD IMAGE LIGHTBOX ===== */
 
 .engineering-main-image img,
+.engineering-thumbnails img,
 .engineering-more-grid img {
   cursor: zoom-in;
   transition: transform 0.2s ease;
 }
 
 .engineering-main-image img:hover,
+.engineering-thumbnails img:hover,
 .engineering-more-grid img:hover {
   transform: scale(1.04);
 }
