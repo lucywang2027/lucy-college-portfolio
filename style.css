@@ -3105,16 +3105,3 @@ footer {
   line-height: 1;
 }
 
-/* =========================================
-   MATCH MAIN SECTION WIDTHS
-   Leadership / Service / Media / Awards
-========================================= */
-
-#leadership,
-#service,
-#highlights,
-#awards {
-  width: min(1260px, 94%) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
